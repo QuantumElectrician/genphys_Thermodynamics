@@ -329,116 +329,116 @@ $$\sigma_v = \sqrt{\sigma_k^2 + \sigma_L^2}$$
 \section{Вывод теоретической модели}
 Скорость звука в газе определяется по формуле
 \begin{equation}
-    c = \sqrt{\left ( \frac{\ P}{\ \rho}\right )_S}
+	c = \sqrt{\left ( \frac{\partial P}{\partial \rho}\right )_S}
 \end{equation}
 
 \begin{equation}
- \left ( \frac{\ P}{\ \rho}\right )_S = - \frac{\left ( \frac{\ S}{\ \rho}\right )_P}{\left ( \frac{\ S}{\ P}\right )_\rho} 
+	\left ( \frac{\partial P}{\partial \rho}\right )_S = - \frac{\left ( \frac{\partial S}{\partial \rho}\right )_P}{\left ( \frac{\partial S}{\partial P}\right )_\rho} 
 \end{equation}
 
 Для одного моля $V = \frac{m}{\rho} = \frac{\mu \nu}{\rho} = \frac{\mu}{\rho}$
 
 \begin{equation}
- \left ( \frac{\ V}{\ \rho}\right )_P = - \frac{\mu}{\rho^2}
+	\left ( \frac{\partial V}{\partial \rho}\right )_P = - \frac{\mu}{\rho^2}
 \end{equation}
 
 
 \begin{equation}
-    \left ( \frac{\ P}{\ \rho}\right )_S = - \frac{\left ( \frac{\ S}{\ \rho}\right )_P}{\left ( \frac{\ S}{\ P}\right )_\rho} = \frac{\left ( \frac{\ V}{\ \rho}\right )_P \left ( \frac{\ S}{\ V}\right )_P}{\left ( \frac{\ S}{\ P}\right )_V} = - \frac{\mu}{\rho^2} \frac{T \left ( \frac{\ S}{\ V}\right )_P}{T \left ( \frac{\ S}{\ P}\right )_V}
+	\left ( \frac{\partial P}{\partial \rho}\right )_S = - \,  \frac{\left ( \frac{\partial S}{\partial \rho}\right )_P}{\left ( \frac{\partial S}{\partial P}\right )_\rho} = - \, \frac{\left ( \frac{\partial V}{\partial \rho}\right )_P \left ( \frac{\partial S}{\partial V}\right )_P}{\left ( \frac{\partial S}{\partial P}\right )_V} = \frac{\mu}{\rho^2} \frac{T \left ( \frac{\partial S}{\partial V}\right )_P}{T \left ( \frac{\partial S}{\partial P}\right )_V}
 \end{equation}
 
 Используя соотношения
 \begin{equation}
-    \left ( \frac{\ S}{\ V}\right )_T = - \left ( \frac{\ T}{\ V}\right )_S \left ( \frac{\ S}{\ T}\right )_P
+	\left ( \frac{\partial S}{\partial V}\right )_P =  \left ( \frac{\partial T}{\partial V}\right )_P \left ( \frac{\partial S}{\partial T}\right )_P
 \end{equation}
 \begin{equation}
-    \left ( \frac{\ S}{\ P}\right )_T = \left ( \frac{\ S}{\ T}\right )_V \left ( \frac{\ T}{\ P}\right )_S
+	\left ( \frac{\partial S}{\partial P}\right )_V = \left ( \frac{\partial S}{\partial T}\right )_V \left ( \frac{\partial T}{\partial P}\right )_V
 \end{equation}
 
 \begin{equation}
-    \left ( \frac{\ S}{\ T}\right )_P = \frac{C_P}{T}
+	\left ( \frac{\partial S}{\partial T}\right )_P = \frac{C_P}{T}
 \end{equation}
 \begin{equation}
-    \left ( \frac{\ S}{\ T}\right )_V = \frac{C_V}{T}
+	\left ( \frac{\partial S}{\partial T}\right )_V = \frac{C_V}{T}
 \end{equation}
 
 Итого получаем
 \begin{equation}
-\left ( \frac{\ P}{\ \rho}\right )_S = \frac{C_P}{C_V} \frac{\mu}{\rho^2}\frac{\left ( \frac{\ T}{\ V}\right )_P}{\left ( \frac{\ T}{\ P}\right )_V}
+	\left ( \frac{\partial P}{\partial \rho}\right )_S = \frac{C_P}{C_V} \frac{\mu}{\rho^2}\frac{\left ( \frac{\partial T}{\partial V}\right )_P}{\left ( \frac{\partial T}{\partial P}\right )_V}
 \end{equation}
 
-Найдём $\left ( \frac{\ T}{\ V}\right )_S$ и $\left ( \frac{\ T}{\ P}\right )_S$
+Найдём $\left ( \frac{\partial T}{\partial V}\right )_P$ и $\left ( \frac{\partial T}{\partial P}\right )_V$
 
 Исследуем модель газа Ван-дер-Ваальса:
 \begin{equation}
-RT = (P + \frac{a}{V^2})(V - b)
+	RT = \left(P + \frac{a}{V^2}\right)(V - b)
 \end{equation}
 
 \begin{equation}
-\left ( \frac{\ T}{\ V}\right )_P = (P - \frac{a}{V^2} + \frac{2ab}{V^3}) 
+	\left ( \frac{\partial T}{\partial V}\right )_P = \frac{1}{R} \left(P - \frac{a}{V^2} + \frac{2ab}{V^3}\right) 
 \end{equation}
 
 \begin{equation}
-\left ( \frac{\ T}{\ P}\right )_V = \frac{V - b}{R}
+	\left ( \frac{\partial T}{\partial P}\right )_V = \frac{V - b}{R}
 \end{equation}
 
 \begin{equation}
-\left ( \frac{\ T}{\ V}\right )_P = \frac{P - \frac{a}{V^2} + \frac{2ab}{V^3}}{R}
+	\left ( \frac{\partial T}{\partial V}\right )_P = \frac{P - \frac{a}{V^2} + \frac{2ab}{V^3}}{R}
 \end{equation}
 
 Далее найдём соотношение $\frac{C_P}{C_V}$
 \begin{equation}
-\frac{C_P}{C_V} = \frac{\left ( \frac{\ Q}{\ T}\right )_P}{\left ( \frac{\ Q}{\ T}\right )_V} = \frac{\left ( \frac{\ U}{\ T}\right )_P + P\left ( \frac{\ V}{\ T}\right )_P}{\left ( \frac{\ U}{\ T}\right )_V}
+	\frac{C_P}{C_V} = \frac{\left ( \frac{\delta Q}{\partial T}\right )_P}{\left ( \frac{\delta Q}{\partial T}\right )_V} = \frac{\left ( \frac{\partial U}{\partial T}\right )_P + P\left ( \frac{\partial V}{\partial T}\right )_P}{\left ( \frac{\partial U}{\partial T}\right )_V}
 \end{equation}
 
 \begin{equation}
-C_V = \frac{i}{2}R
+	C_V = \frac{i}{2}R
 \end{equation}
 
 \begin{equation}
-\left ( \frac{\ V}{\ T}\right )_P = \frac{1}{\left ( \frac{\ T}{\ V}\right )_P} = \frac{R}{P - \frac{a}{V^2} + \frac{2ab}{V^3}} \approx \frac{R}{P - \frac{a}{V^2}} = \frac{R}{P}(1 + \frac{a}{PV^2})
+	\left ( \frac{\partial V}{\partial T}\right )_P = \frac{1}{\left ( \frac{\partial T}{\partial V}\right )_P} = \frac{R}{P - \frac{a}{V^2} + \frac{2ab}{V^3}} \approx \frac{R}{P - \frac{a}{V^2}} \approx \frac{R}{P}\left(1 + \frac{a}{PV^2}\right)
 \end{equation}
 
 \begin{equation}
-U = \frac{i}{2}RT - \frac{a}{V(T)}
+	U = \frac{i}{2}RT - \frac{a}{V(T)}
 \end{equation}
 
 \begin{equation}
-\left ( \frac{\ U}{\ T}\right )_P = \frac{a}{V^2}
+	\left ( \frac{\partial U}{\partial T}\right )_P = \frac{a}{V^2}
 \end{equation}
 
 \begin{equation}
-dU = \frac{i}{2}RdT + \frac{a}{V^2}dV
+	dU = \frac{i}{2}RdT + \frac{a}{V^2}dV
 \end{equation}
 
 \begin{equation}
-\left ( \frac{\ U}{\ T}\right )_P = \frac{i}{2} + \frac{a}{V^2}\left ( \frac{\ V}{\ T}\right )_P
+	\left ( \frac{\partial U}{\partial T}\right )_P = \frac{i}{2}R + \frac{a}{V^2}\left ( \frac{\partial V}{\partial T}\right )_P
 \end{equation}
 Подставим (16)
 \begin{equation}
-\left ( \frac{\ U}{\ T}\right )_P = \frac{i}{2}R + \frac{a}{V^2}\frac{R}{P}(1 + \frac{1}{PV^2})
+	\left ( \frac{\partial U}{\partial T}\right )_P = \frac{i}{2}R + \frac{a}{V^2}\frac{R}{P}\left(1 + \frac{1}{PV^2}\right)
 \end{equation}
 
 Получаем
 \begin{equation}
-C_P = \frac{i}{2}R + R(1 + \frac{a}{PV^2})^2 = \frac{i+2}{2}R + \frac{2aR}{PV^2}
+	C_P = \frac{i}{2}R + R\left(1 + \frac{a}{PV^2}\right)^2 = \frac{i+2}{2}R + \frac{2aR}{PV^2}
 \end{equation}
 
 Тогда 
 \begin{equation}
-\frac{C_P}{C_V} = \frac{\frac{i+2}{2}R + \frac{2aR}{PV^2}}{\frac{i}{2}R} = \gamma_0 + \frac{4aP}{iR^2T^2}
+	\frac{C_P}{C_V} = \frac{\frac{i+2}{2}R + \frac{2aR}{PV^2}}{\frac{i}{2}R} = \gamma_0 + \frac{4aP}{iR^2T^2}
 \end{equation}
 
 Окончательно получаем 
 \begin{equation}
-c = \sqrt{\left ( \frac{\ P}{\ \rho}\right )_S} = \sqrt{(\gamma_0 + \frac{4aP}{iR^2T^2})\frac{\mu}{\rho^2}\frac{P - \frac{a}{V^2} + \frac{2ab}{V^3}}{V - b}}
+	c = \sqrt{\left ( \frac{\partial P}{\partial \rho}\right )_S} = \sqrt{\left(\gamma_0 + \frac{4aP}{iR^2T^2}\right)\frac{\mu}{\rho^2}\frac{P - \frac{a}{V^2} + \frac{2ab}{V^3}}{V - b}}
 \end{equation}
 
 Итого зависимость скорости звука от давления:
 \begin{equation}
-c = c_0 \left ( 1 + \frac{2aP}{iRT\mu c^2_0} \right )\left ( 1 + \frac{P}{2RT} \left ( b - \frac{a}{RT} + \frac{2Pab}{(RT)^2} \right ) \right ),
+	c = c_0 \left ( 1 + \frac{2aP}{iRT\mu c^2_0} \right )\left [ 1 + \frac{P}{2RT} \left ( b - \frac{a}{RT} + \frac{2Pab}{(RT)^2} \right ) \right ],
 \end{equation}
-где $c_0$ - скорость звука по формуле $c = \sqrt{\gamma \frac{RT}{\mu}}$ при определённой фиксированной температуре, a и b - коэффициенты Ван-дер-Ваальса, i - число степеней свободы газа. 
+где $c_0$ - скорость звука по формуле $c = \sqrt{\gamma \frac{RT}{\mu}}$ при определённой фиксированной температуре, a и b - коэффициенты Ван-дер-Ваальса, i - число степеней свободы газа.
 
 На сайте tehtab.ru приведен экспериментальный график зависимости скорости звука в воздухе при температуре 20$^{\circ} C$ от давления при больших давлениях. Построим график такой же зависимости по выведенной нами формуле.
 \begin{figure}[h]
